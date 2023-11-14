@@ -18,6 +18,8 @@ BuildRequires: pkgconfig(Qt5Widgets)
 BuildRequires: pkgconfig(Qt5DBus)
 BuildRequires: pkgconfig(Qt5X11Extras)
 BuildRequires: pkgconfig(Qt5Charts)
+BuildRequires: pkgconfig(libdrm)
+BuildRequires: pkgconfig(libdrm_amdgpu)
 BuildRequires: qt5-linguist-tools
 BuildRequires: hwdata
 BuildRequires: git-core

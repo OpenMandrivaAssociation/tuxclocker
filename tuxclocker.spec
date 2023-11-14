@@ -18,6 +18,7 @@ BuildRequires: pkgconfig(Qt5Widgets)
 BuildRequires: pkgconfig(Qt5DBus)
 BuildRequires: pkgconfig(Qt5X11Extras)
 BuildRequires: git-core
+BuildRequires: boost-devel
 
 %description
 TuxClocker is a hardware controlling and monitoring program. TuxClocker

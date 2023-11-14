@@ -17,6 +17,9 @@ BuildRequires: pkgconfig(Qt5Gui)
 BuildRequires: pkgconfig(Qt5Widgets)
 BuildRequires: pkgconfig(Qt5DBus)
 BuildRequires: pkgconfig(Qt5X11Extras)
+BuildRequires: pkgconfig(Qt5Charts)
+BuildRequires: qt5-assistant-tools
+BuildRequires: hwdata
 BuildRequires: git-core
 BuildRequires: boost-devel
 BuildRequires: qmake5

@@ -1,6 +1,6 @@
 Name: tuxclocker
 Version: 1.3.1
-Release: 1
+Release: 2
 Source0: https://github.com/Lurkki14/tuxclocker/archive/%{version}/%{name}-%{version}.tar.gz
 # Correct revisions for internalized 3rd party components
 # can be seen at https://github.com/Lurkki14/tuxclocker/tree/%{version}/src/include/deps

@@ -10,6 +10,7 @@ Summary: Graphical overclocking tool
 URL: https://github.com/Lurkki14/tuxclocker
 License: GPL-3.0
 Group: System
+BuildRequires: gettext
 BuildRequires: meson ninja
 BuildRequires: pkgconfig(openssl)
 BuildRequires: pkgconfig(Qt5Core)

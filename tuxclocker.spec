@@ -1,6 +1,6 @@
 Name: tuxclocker
-Version: 1.3.1
-Release: 2
+Version: 1.4.0
+Release: 1
 Source0: https://github.com/Lurkki14/tuxclocker/archive/%{version}/%{name}-%{version}.tar.gz
 # Correct revisions for internalized 3rd party components
 # can be seen at https://github.com/Lurkki14/tuxclocker/tree/%{version}/src/include/deps
@@ -59,3 +59,5 @@ cd -
 %{_libdir}/tuxclocker/plugins/libcpu.so
 %{_datadir}/dbus-1/system-services/org.tuxclocker.service
 %{_datadir}/dbus-1/system.d/org.tuxclocker.conf
+%{_datadir}/applications/tuxclocker.desktop
+%{_iconsdir}/hicolor/scalable/apps/tuxclocker-logo.svg

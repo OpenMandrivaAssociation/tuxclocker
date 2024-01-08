@@ -59,3 +59,5 @@ cd -
 %{_libdir}/tuxclocker/plugins/libcpu.so
 %{_datadir}/dbus-1/system-services/org.tuxclocker.service
 %{_datadir}/dbus-1/system.d/org.tuxclocker.conf
+%{_datadir}/applications/tuxclocker.desktop
+%{_iconsdir}/hicolor/scalable/apps/tuxclocker-logo.svg

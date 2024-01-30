@@ -1,0 +1,21 @@
+diff -up tuxclocker-1.5.0/src/plugins/CPU.cpp.omv~ tuxclocker-1.5.0/src/plugins/CPU.cpp
+--- tuxclocker-1.5.0/src/plugins/CPU.cpp.omv~	2024-01-30 17:52:44.416074020 +0100
++++ tuxclocker-1.5.0/src/plugins/CPU.cpp	2024-01-30 17:53:06.136305648 +0100
+@@ -700,7 +700,7 @@ std::vector<TreeNode<DeviceNode>> getGov
+ 
+ 		EnumerationVec enumVec;
+ 		std::vector<std::string> sysFsNames;
+-		int enumId = 0;
++		unsigned int enumId = 0;
+ 		for (auto &word : split_words(false, *contents)) {
+ 			auto e = Enumeration{fromSysFsName(word), enumId};
+ 			enumId++;
+@@ -788,7 +788,7 @@ std::vector<TreeNode<DeviceNode>> getEPP
+ 			continue;
+ 
+ 		EnumerationVec enumVec;
+-		for (int i = 0; i < sysFsNames.size(); i++) {
++		for (unsigned int i = 0; i < sysFsNames.size(); i++) {
+ 			auto e = Enumeration{fromSysFsName(sysFsNames[i]), i};
+ 			enumVec.push_back(e);
+ 		}

@@ -1,5 +1,5 @@
 Name: tuxclocker
-Version: 1.5.0
+Version: 1.5.1
 Release: 1
 Source0: https://github.com/Lurkki14/tuxclocker/archive/%{version}/%{name}-%{version}.tar.gz
 # Correct revisions for internalized 3rd party components

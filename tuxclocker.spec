@@ -1,12 +1,13 @@
 Name: tuxclocker
 Version: 1.5.1
-Release: 5
+Release: 6
 Source0: https://github.com/Lurkki14/tuxclocker/archive/%{version}/%{name}-%{version}.tar.gz
 # Correct revisions for internalized 3rd party components
 # can be seen at https://github.com/Lurkki14/tuxclocker/tree/%{version}/src/include/deps
 Source1: https://github.com/Dobiasd/FunctionalPlus/archive/25363e38172db64a744c4983cc2a5088838cb519.tar.gz
 Source2: https://github.com/mpark/patterns/archive/b3270e0dd7b6312f7a4fe8647e2333dbb86e355e.tar.gz
 Patch0: tuxclocker-1.5.0-clang-18.patch
+Patch1: tuxclocker-1.5.0-no-boost-shared_ptr.patch
 Summary: Graphical overclocking tool
 URL: https://github.com/Lurkki14/tuxclocker
 License: GPL-3.0

@@ -1,0 +1,26 @@
+diff -up tuxclocker-1.5.1/src/include/Plugin.hpp.omv~ tuxclocker-1.5.1/src/include/Plugin.hpp
+--- tuxclocker-1.5.1/src/include/Plugin.hpp.omv~	2025-04-12 01:56:27.789694166 +0200
++++ tuxclocker-1.5.1/src/include/Plugin.hpp	2025-04-12 01:56:35.766174076 +0200
+@@ -41,7 +41,7 @@ public:
+ 	virtual ~DevicePlugin() {}
+ 
+ 	// Helper for loading all DevicePlugin's
+-	static std::optional<std::vector<boost::shared_ptr<DevicePlugin>>> loadPlugins();
++	static std::optional<std::vector<std::shared_ptr<DevicePlugin>>> loadPlugins();
+ };
+ 
+ }; // namespace Plugin
+diff -up tuxclocker-1.5.1/src/lib/Plugin.cpp.omv~ tuxclocker-1.5.1/src/lib/Plugin.cpp
+--- tuxclocker-1.5.1/src/lib/Plugin.cpp.omv~	2025-04-12 01:56:40.382395153 +0200
++++ tuxclocker-1.5.1/src/lib/Plugin.cpp	2025-04-12 01:56:47.511256083 +0200
+@@ -9,8 +9,8 @@ namespace fs = std::filesystem;
+ 
+ std::string Plugin::pluginPath() { return TC_PLUGIN_PATH; }
+ 
+-std::optional<std::vector<boost::shared_ptr<DevicePlugin>>> DevicePlugin::loadPlugins() {
+-	std::vector<boost::shared_ptr<DevicePlugin>> retval;
++std::optional<std::vector<std::shared_ptr<DevicePlugin>>> DevicePlugin::loadPlugins() {
++	std::vector<std::shared_ptr<DevicePlugin>> retval;
+ 
+ 	std::string pluginPath;
+ 	const char *pluginPathEnv = std::getenv("TUXCLOCKER_PLUGIN_PATH");
